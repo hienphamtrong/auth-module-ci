@@ -1,0 +1,41 @@
+{
+  "name": "authentication_using_mern",
+  "version": "1.0.0",
+  "description": "This is a simple authentication system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "login",
+    "signup",
+    "authentication",
+    "Dileepadari"
+  ],
+  "author": "Dileepkumar Adari",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dileepadari/AuthModule.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dileepadari/AuthModule/issues"
+  },
+  "homepage": "https://github.com/Dileepadari/AuthModule#readme"
+}

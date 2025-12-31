@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body{
+            background: rgb(223, 223, 223);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            justify-self: center;
+            align-items: center;
+            background: white;
+            min-height: 300px;
+            min-width: 300px;
+            padding: 60px;  
+        }
+        .logout{    
+            text-decoration: none;
+            color: white;
+            background: rgb(0, 153, 255);
+            padding: 10px;
+            height: max-content ;
+            font-weight: 700;
+        }
+
+        .logout:hover{
+            background: transparent;
+            border: 1px solid  rgb(0, 153, 255);
+            color: rgb(94, 94, 94);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div>
+            <h1>Welcome <%= user.name %> </h1>
+            You are Successfully logged in with mail <span id="email"><%= user.email %></span>. <br>
+            This is Both Registration and Login system with validated and hashed password. <br>
+            Sample Test.
+            <br><br>
+            <a class="logout" href="/logout">logout</a><br>
+        </div>
+    </div>          
+</body>
+</html>
