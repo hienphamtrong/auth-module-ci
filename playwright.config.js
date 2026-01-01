@@ -8,9 +8,9 @@ module.exports = defineConfig({
     baseURL: "http://localhost:3000",
     headless: true,
     screenshot: "only-on-failure",
-    reporter: process.env.CI ? 'dot' : 'list',
+    //reporter: process.env.CI ? 'dot' : 'list',
     video: "retain-on-failure"
-  }
+  },
   reporter: [
     ['list'],
     ['html', { outputFolder: 'test-results/html-report', open: 'never' }]
