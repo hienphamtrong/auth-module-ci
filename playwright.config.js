@@ -11,4 +11,8 @@ module.exports = defineConfig({
     reporter: process.env.CI ? 'dot' : 'list',
     video: "retain-on-failure"
   }
+  reporter: [
+    ['list'],
+    ['html', { outputFolder: 'test-results/html-report', open: 'never' }]
+  ]
 });
