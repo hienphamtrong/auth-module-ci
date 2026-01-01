@@ -1,8 +1,8 @@
 const { test, expect } = require("@playwright/test");
 
-test.describe("Login successfull with valid username and password", () => {
+test.describe("Login Page", () => {
 
-  test("Valid login should show welcome page", async ({ page }) => {
+  test("Login succeeds with valid credentials", async ({ page }) => {
     await page.goto("/login");
 
     await page.fill('input[name="email"]', 'testuser@gmail.com');
@@ -17,7 +17,7 @@ test.describe("Login successfull with valid username and password", () => {
   });
 
 
-  test("Invalid login with vaild username and wrong password", async ({ page }) => {
+  test("Login fails with invalid credentials", async ({ page }) => {
     await page.goto("/login");
 
     await page.fill('input[name="email"]', 'testuser@gmail.com');
